@@ -1,0 +1,25 @@
+name: Portfolio CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  house-price-prediction:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/house-price-prediction
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: projects/house-price-prediction/requirements-dev.txt
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Rebuild model artifacts
+        run: python -m src.train
+      - name: Run tests
+        run: python -m pytest

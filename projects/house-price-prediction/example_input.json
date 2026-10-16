@@ -1,0 +1,11 @@
+{
+  "age": 45,
+  "income": 75000,
+  "experience_years": 18,
+  "education_level": "bachelor",
+  "hours_per_week": 40,
+  "city_index": "B",
+  "credit_score": 720,
+  "loan_amount": 25000,
+  "debt_ratio": 0.35
+}

@@ -1,0 +1,45 @@
+{
+  "dataset_rows": 1200,
+  "training_rows": 960,
+  "test_rows": 240,
+  "random_state": 42,
+  "test_size": 0.2,
+  "selected_model": "Dummy median baseline",
+  "selection_rule": "Highest mean five-fold cross-validation R-squared",
+  "cross_validation": [
+    {
+      "model": "Dummy median baseline",
+      "cv_r2_mean": -0.012837440883889429,
+      "cv_r2_std": 0.008988425512892313,
+      "cv_mae": 84636.13441586649,
+      "cv_rmse": 153584.54313864856
+    },
+    {
+      "model": "ElasticNet",
+      "cv_r2_mean": -0.020741852623487843,
+      "cv_r2_std": 0.02280485451068273,
+      "cv_mae": 86826.10257576099,
+      "cv_rmse": 153722.55702435208
+    },
+    {
+      "model": "Gradient boosting",
+      "cv_r2_mean": -0.039046354033897265,
+      "cv_r2_std": 0.017776637796067453,
+      "cv_mae": 86785.78152834039,
+      "cv_rmse": 155271.9596548798
+    },
+    {
+      "model": "Ridge",
+      "cv_r2_mean": -0.04957399356032619,
+      "cv_r2_std": 0.03741723427425088,
+      "cv_mae": 88919.20957370996,
+      "cv_rmse": 155632.24211002272
+    }
+  ],
+  "holdout": {
+    "r2": -0.0018686156167468937,
+    "mae": 66650.91156442052,
+    "rmse": 91309.55693512694
+  },
+  "deployment_fit_rows": 1200
+}

@@ -1,0 +1,26 @@
+{
+  "created_at_utc": "2026-10-16T19:48:19.830981+00:00",
+  "python_version": "3.13.5",
+  "pandas_version": "2.2.3",
+  "numpy_version": "2.1.3",
+  "scikit_learn_version": "1.6.1",
+  "joblib_version": "1.4.2",
+  "target": "target_house_price",
+  "features": [
+    "age",
+    "income",
+    "experience_years",
+    "education_level",
+    "hours_per_week",
+    "city_index",
+    "credit_score",
+    "loan_amount",
+    "debt_ratio"
+  ],
+  "missing_value_policy": {
+    "city_index_question_mark": "Converted to missing",
+    "numeric": "Median imputation learned on training data",
+    "categorical": "Most-frequent imputation learned on training data"
+  },
+  "status": "Research baseline only; holdout R-squared is not positive"
+}

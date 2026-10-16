@@ -1,0 +1,35 @@
+<svg width="1400" height="360" viewBox="0 0 1400 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="background" x1="80" y1="20" x2="1320" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="0.52" stop-color="#172554"/>
+      <stop offset="1" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="200" y1="70" x2="1180" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="360" rx="28" fill="url(#background)"/>
+  <circle cx="1240" cy="72" r="170" fill="#6366F1" fill-opacity="0.11"/>
+  <circle cx="160" cy="330" r="205" fill="#06B6D4" fill-opacity="0.09"/>
+  <g opacity="0.8" stroke="url(#accent)" stroke-width="2">
+    <path d="M95 96L180 54L268 104L354 62L441 112"/>
+    <path d="M960 256L1045 214L1133 264L1219 222L1306 272"/>
+  </g>
+  <g fill="#67E8F9" filter="url(#glow)">
+    <circle cx="95" cy="96" r="5"/><circle cx="180" cy="54" r="5"/><circle cx="268" cy="104" r="5"/>
+    <circle cx="354" cy="62" r="5"/><circle cx="441" cy="112" r="5"/>
+    <circle cx="960" cy="256" r="5"/><circle cx="1045" cy="214" r="5"/><circle cx="1133" cy="264" r="5"/>
+    <circle cx="1219" cy="222" r="5"/><circle cx="1306" cy="272" r="5"/>
+  </g>
+  <rect x="455" y="86" width="490" height="188" rx="24" fill="#0F172A" fill-opacity="0.62" stroke="#818CF8" stroke-opacity="0.45"/>
+  <text x="700" y="157" text-anchor="middle" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700">AI &amp; MACHINE LEARNING</text>
+  <text x="700" y="210" text-anchor="middle" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="650">PORTFOLIO</text>
+  <text x="700" y="249" text-anchor="middle" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="18">Reproducible projects · Honest evaluation · Production-minded engineering</text>
+</svg>

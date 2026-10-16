@@ -1,0 +1,10 @@
+[project]
+name = "house-price-prediction"
+version = "0.1.0"
+description = "Reproducible house-price regression baseline"
+requires-python = ">=3.11,<3.14"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
