@@ -1,6 +1,6 @@
 # Contributing and adding projects
 
-Create each new project under `projects/<project-name>/` and use `PROJECT_TEMPLATE.md` as the documentation checklist.
+Create each new project under `projects/<category>/<project-name>/` and use `PROJECT_TEMPLATE.md` as the documentation checklist. The supported categories are `machine-learning`, `deep-learning`, `generative-ai`, and `nlp`.
 
 Before adding a project:
 

@@ -22,16 +22,38 @@ This repository is a growing collection of end-to-end AI projects. Each project 
 
 The emphasis is on honest evaluation and engineering discipline. When a dataset does not support a strong model, the project reports that result instead of presenting misleading accuracy.
 
-## Featured projects
+## Projects by category
 
-| Project | Area | What it demonstrates | Result | Status |
-|---|---|---|---|---|
-| [House Price Prediction](projects/house-price-prediction) | Machine Learning | Data-quality audit, leakage-safe preprocessing, cross-validation, model serialization, CLI inference, tests, and CI | Median baseline selected; holdout R² `-0.002`, revealing insufficient predictive signal | Complete baseline |
+### Machine Learning
+
+| Project | What it demonstrates | Result | Status |
+|---|---|---|---|
+| [House Price Prediction](projects/machine-learning/house-price-prediction) | Data-quality audit, leakage-safe preprocessing, cross-validation, model serialization, CLI inference, tests, and CI | Median baseline selected; holdout R² `-0.002`, revealing insufficient predictive signal | Complete baseline |
+
+[Browse all Machine Learning projects →](projects/machine-learning)
+
+### Deep Learning
+
+Neural networks, computer vision, transfer learning, and experiment tracking projects will be organized here.
+
+[Browse Deep Learning projects →](projects/deep-learning)
+
+### Generative AI
+
+RAG systems, LLM evaluation, guardrails, agents, and prompt-engineering projects will be organized here.
+
+[Browse Generative AI projects →](projects/generative-ai)
+
+### Natural Language Processing
+
+Text classification, embeddings, semantic search, and information-extraction projects will be organized here.
+
+[Browse NLP projects →](projects/nlp)
 
 ## House Price Prediction
 
 <p align="center">
-  <img src="projects/house-price-prediction/reports/figures/data_quality_overview.png" alt="House-price dataset quality overview" width="92%" />
+  <img src="projects/machine-learning/house-price-prediction/reports/figures/data_quality_overview.png" alt="House-price dataset quality overview" width="92%" />
 </p>
 
 The first project converts an error-prone neural-network notebook into a reproducible regression repository. It fixes a column-filtering bug, removes preprocessing leakage, replaces deprecated code, compares multiple estimators, packages a trained artifact, and documents why the available data cannot support a useful production predictor.
@@ -44,19 +66,11 @@ The first project converts an error-prone neural-network notebook into a reprodu
 - Documented model limitations and dataset provenance risks in a dedicated model card.
 - Preserved the statistically honest result: more model complexity did not overcome weak input data.
 
-[Explore the project →](projects/house-price-prediction/README.md)
+[Explore the project →](projects/machine-learning/house-price-prediction/README.md)
 
-## Portfolio roadmap
+## How projects are organized
 
-Future projects will be added as complete, reviewable work rather than empty placeholders.
-
-| Track | Planned project themes |
-|---|---|
-| Deep Learning | Computer vision, transfer learning, and neural-network experiment tracking |
-| Natural Language Processing | Text classification, embeddings, semantic search, and information extraction |
-| Generative AI | Retrieval-augmented generation, evaluation, guardrails, and agent workflows |
-| Prompt Engineering | Prompt design patterns, structured outputs, reliability tests, and prompt evaluation |
-| MLOps | Reproducible training, model APIs, monitoring, CI/CD, and deployment |
+Every project belongs to one primary category so recruiters and reviewers can quickly find the relevant work. Prompt-engineering projects that evaluate or operate LLMs live under Generative AI; language-modeling and classical text-analysis projects live under NLP. New projects are added only when they are runnable and documented.
 
 ## Repository structure
 
@@ -65,13 +79,17 @@ ai-ml-portfolio/
 ├── .github/workflows/        # Automated quality checks
 ├── assets/                   # Portfolio visuals
 ├── projects/
-│   └── house-price-prediction/
-│       ├── data/
-│       ├── models/
-│       ├── notebooks/
-│       ├── reports/figures/
-│       ├── src/
-│       └── tests/
+│   ├── machine-learning/
+│   │   └── house-price-prediction/
+│   │       ├── data/
+│   │       ├── models/
+│   │       ├── notebooks/
+│   │       ├── reports/figures/
+│   │       ├── src/
+│   │       └── tests/
+│   ├── deep-learning/
+│   ├── generative-ai/
+│   └── nlp/
 ├── CONTRIBUTING.md
 └── PROJECT_TEMPLATE.md
 ```
@@ -92,7 +110,7 @@ Every project added to this portfolio should include:
 ## Run the current project
 
 ```bash
-cd projects/house-price-prediction
+cd projects/machine-learning/house-price-prediction
 python -m venv .venv
 ```
 
